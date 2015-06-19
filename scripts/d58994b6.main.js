@@ -1,0 +1,1 @@
+!function(){$("#myModal").modal({show:!0}),$(".carousel").carousel({controls:!0})}();

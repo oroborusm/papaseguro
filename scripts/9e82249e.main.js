@@ -1,1 +1,0 @@
-console.log("'Allo 'Allo!"),function(){$(".carousel").carousel({controls:!0})}();
