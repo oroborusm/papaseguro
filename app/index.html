@@ -10,13 +10,11 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/estilos.css">
-    <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
     <!-- endbuild -->
   </head>
   <body>
@@ -53,7 +51,7 @@
             <div class="imagenCarrusel" style="background-image:url(images/foto-1.png); background-position: center;"></div>
             <div class="carousel-caption textoEntrada">
               <h2>
-                Cuidamos de ti, para que disfrutes la vida con quienes más amas.
+                Cuidamos de ti, para que <span>disfrutes la vida</span> con quienes más amas.
               </h2>
             </div>
           </div>
@@ -61,7 +59,7 @@
              <div class="imagenCarrusel" style="background-image:url(images/foto-2.png); background-position: center;"></div>
              <div class="carousel-caption textoEntrada">
                <h2>
-                 Verlos triunfar en la vida, es el mayor anhelo de un padre, ¡asegúrate hoy!
+                 Verlos triunfar en la vida, es el mayor <span>anhelo de un padre,</span> ¡asegúrate hoy!
                </h2>
              </div>
           </div>
@@ -69,17 +67,17 @@
              <div class="imagenCarrusel" style="background-image:url(images/foto-3.png); background-position: center top;"></div>
              <div class="carousel-caption textoEntrada">
                <h2>
-                 Seguro papá, Mutual de Seguros de Chile
+                 <span>Seguro papá</span>, Mutual de Seguros de Chile
                </h2>
              </div>
           </div>
         </div>
         <a class="left carousel-control" href="#carrusel" role="button" data-slide="prev">
-          <i class="fa fa-angle-double-left"></i>
+          <img class="fotoLeft" src="images/left.png" alt="">
           <span class="sr-only">Previous</span>
         </a>
         <a class="right carousel-control" href="#carrusel" role="button" data-slide="next">
-          <i class="fa fa-angle-double-right"></i>
+          <img class="fotoRight" src="images/right.png" alt="">
           <span class="sr-only">Next</span>
         </a>
       </div>
@@ -104,7 +102,7 @@
           </a>  
         </aside>
         <div class="contenedorBoton">
-          <button id="abrevideo" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Volver a ver el vídeo <i class="fa fa-youtube-play rojitoColor"></i></button>
+          <button id="abrevideo" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Volver a ver el vídeo <img class="youtube" src="images/youtube.png" alt="">
         </div>
         
       </section>

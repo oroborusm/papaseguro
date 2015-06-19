@@ -151,7 +151,8 @@ section{
 	padding: 1em;
 	text-align: center;
 	transition:.2s;
-	width: 60%
+	/*width: 60%*/
+	width: 719px;
 }
 	.descargas:hover{
 		background: #1EBEB4;
@@ -160,29 +161,28 @@ section{
 .enLinea{
 	display: inline-block;
 }
-.fa-angle-double-left,
-.fa-angle-double-right{
-	font-size: 30px !important;
-}
 
-.fa-angle-double-left,
-.fa-angle-double-right{
-	color: white;
+.fotoLeft,
+.fotoRight{
+	background: transparent;
 	font-size: 30px;
-	height: 45px !important;
+	height: 30px !important;
 	position: absolute;
 	top: 50%;
-	width: 45px !important;
+	width: 30px !important;
 }
-.fa-angle-double-left{
-	left: 40%;
+.fotoLeft{
+	left: 10%;
 	text-align: left;
 }
-.fa-angle-double-right{
+.fotoRight{
 	text-align: left;
+	right: 10%;
 }
-.fa-youtube-play{
+.youtube{
 	margin-left: .5em;
+	margin-top: -3px;
+	width: 20px;
 }
 .imagenCarrusel{
 	background-size: cover;
@@ -197,7 +197,8 @@ section{
 	/*box-shadow: 0 0 5px #005db9;*/
 	margin: -50px auto 0 auto;
 	padding: 0 !important;
-	width: 60%;
+	/*width: 60%;*/
+	width: 719px;
 	z-index: 5;
 }
 	.jumbotron h1,
@@ -303,7 +304,8 @@ section{
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 !important;
-	width: 60%;
+	/*width: 60%;*/
+	width:719px;
 	z-index: 5
 ;}
 .tab-content ul{
@@ -314,9 +316,13 @@ section{
 		color: #112659;
 		font-weight: 600;
 	}
+	.tab-content p{
+		text-align: justify;
+	}
 .tabsBottom{
 	margin: 0 auto;
-	width: 65%;
+	/*width: 65%;*/
+	width: 719px;
 }
 	.nav-tabs.nav-justified > li > a{
 		font-size: 13px !important;
@@ -339,11 +345,15 @@ section{
 }
 	.textoEntrada h2{
 		color: white;
-		text-shadow: 0 0 10px #112659;
-		font-size: 22px;
+		font-size: 1.5em;
 		font-weight: 600;
 		margin: 0;
 		text-align: left;
+		/*text-shadow: 0 0 10px #112659;*/
+	}
+	.textoEntrada span{
+		color: #1EBEB4;
+		font-size: 120%;
 	}
 .contentTab{
 	margin: 0 auto;
@@ -357,11 +367,6 @@ section{
 	text-transform: uppercase;
 }
 
-@media screen and (max-width: 960px){
-	.tabsBottom{
-		width: 80%;
-	}
-}
 
 @media screen and (max-width: 800px){
 	.botonMenu span{
@@ -379,7 +384,11 @@ section{
 		width: 100%;
 	}
 }
-
+@media screen and (max-width: 450px){
+	.textoEntrada h2{
+		font-size: 1.2em;
+	}
+}
 @media screen and (max-width: 350px){
 	section{
 		width: 100%;
