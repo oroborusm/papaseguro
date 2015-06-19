@@ -81,6 +81,9 @@ section{
 .azulClaro{
 	color: #005db9;
 }
+.bold{
+	font-weight: 600;
+}
 .cabecera{
 	height: 450px;
 	margin: 0;
@@ -128,7 +131,7 @@ section{
 	width: 100%;
 }
 .contenedorBoton{
-	margin-top: 1em;
+	margin-top: 2em;
 	text-align: center;
 }
 	.contenedorBoton button{
@@ -157,7 +160,9 @@ section{
 	.descargas:hover{
 		background: #1EBEB4;
 	}
-
+	.descripcion ul{
+		text-align: justify !important;
+	}
 .enLinea{
 	display: inline-block;
 }
@@ -178,6 +183,11 @@ section{
 .fotoRight{
 	text-align: left;
 	right: 10%;
+}
+.fotosFooter a{
+	color: white;
+	display: block;
+	margin-top: 10px;
 }
 .youtube{
 	margin-left: .5em;
@@ -292,11 +302,42 @@ section{
 	.icon-bar{
 		background: rgba(1,172,246, 1);
 	}
+.pagos{
+	/*background: aliceblue;*/
+	margin: 2em auto 1em;
+	padding: 1em;
+	text-align: left;
+	width: 719px;
+}
+	.pagos figure{
+		border-bottom: 1px solid #999;
+		margin: 0;
+		padding: 0;
+	}
+	.pagos figcaption{
+		font-size: 10px;
+		margin-left: 20px;
+		text-transform: uppercase;
+		width: 440px;
+	}
+	.pagos figcaption, .pagos img{
+		display: inline-block;
+		vertical-align: bottom;
+	}
+	.pagos img{
+		width: 200px;
+	}
+.pocoMargen{
+	margin-top:1em;
+}
 .rojitoColor{
 	color: #B23D23;
 }
 .rojitoBackground{
 	background: #B23D23;
+}
+.sinMargen{
+	margin: 0 !important;
 }
 .tab-content{
 	background: #eee;
@@ -361,8 +402,8 @@ section{
 	padding: 3em 0 2em;
 	width: 80%;
 }
-	.contentTab ul{
-		margin-top: 1em;
+	.contentTab h2{
+		margin-bottom: 1em;
 	}
 .uppercase{
 	text-transform: uppercase;
@@ -373,7 +414,7 @@ section{
 	.botonMenu span{
 		border-right: 0;		
 	}
-	.jumbotron, .descargas, .tabsBottom, .tab-content{
+	.jumbotron, .descargas, .tabsBottom, .tab-content, .pagos{
 		width: 100%;
 	}
 	.fotosFooter{
@@ -382,6 +423,17 @@ section{
 		margin: 1.5em auto .8em;
 		padding-left: .8em;
 		text-align: left;
+		width: 100%;
+	}
+	.pagos figure{
+		border-bottom: 0;
+		text-align: center;
+	}
+	.pagos figcaption{
+		border-top: 1px solid #999;
+		margin-left: 0;
+		margin-top: 1em;
+		padding-top: 5px;
 		width: 100%;
 	}
 }
