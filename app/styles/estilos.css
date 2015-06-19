@@ -352,8 +352,9 @@ section{
 		/*text-shadow: 0 0 10px #112659;*/
 	}
 	.textoEntrada span{
-		color: #1EBEB4;
-		font-size: 120%;
+		color: #FFCD55;
+		font-size: 125%;
+		/*text-shadow: 0 0 2px white;*/
 	}
 .contentTab{
 	margin: 0 auto;
