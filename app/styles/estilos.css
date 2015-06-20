@@ -81,6 +81,12 @@ section{
 .azulClaro{
 	color: #005db9;
 }
+.azulOscuro{
+	color:#112659 !important;
+}
+.bajas{
+	text-transform: lowercase !important;
+}
 .bold{
 	font-weight: 600;
 }
@@ -96,6 +102,9 @@ section{
 	font-weight: 600;
 	line-height: 16px;
 	margin-right: 2px;
+}
+.capitulizar{
+	text-transform: capitalize !important;
 }
 .carrusel{
 	margin: 0 auto;
@@ -184,7 +193,7 @@ section{
 	text-align: left;
 	right: 10%;
 }
-.fotosFooter a{
+.fotosFooter p{
 	color: white;
 	display: block;
 	margin-top: 10px;
@@ -307,7 +316,7 @@ section{
 	margin: 2em auto 1em;
 	padding: 1em;
 	text-align: left;
-	width: 719px;
+	width: 100%;
 }
 	.pagos figure{
 		border-bottom: 1px solid #999;
@@ -318,7 +327,7 @@ section{
 		font-size: 10px;
 		margin-left: 20px;
 		text-transform: uppercase;
-		width: 440px;
+		width: 55%;
 	}
 	.pagos figcaption, .pagos img{
 		display: inline-block;
@@ -430,7 +439,7 @@ section{
 	}
 	.pagos figure{
 		border-bottom: 0;
-		text-align: center;
+		text-align: justify;
 	}
 	.pagos figcaption{
 		border-top: 1px solid #999;
