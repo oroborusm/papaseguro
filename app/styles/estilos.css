@@ -27,6 +27,7 @@ nav{
 		padding: 0 !important;
 	}
 	.active .botonMenu{
+		color: #FFCD55;
 		font-weight: 800;
 	}
 	.botonMenu{
@@ -211,6 +212,9 @@ section{
 	background-size: cover;
 	height: 450px;
 }
+.iram{
+	width: 250px;
+}
 .jumbotron{
 	/*background: rgba(130,150,195, .1);*/
 	
@@ -376,6 +380,7 @@ section{
 .tab-content .listaClara li{
 	color: #666;
 	font-weight: normal;
+	margin-bottom: .5em;
 }
 .tabsBottom{
 	margin: 0 auto;
