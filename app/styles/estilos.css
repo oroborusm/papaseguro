@@ -373,6 +373,10 @@ section{
 	.tab-content p{
 		text-align: justify;
 	}
+.tab-content .listaClara li{
+	color: #666;
+	font-weight: normal;
+}
 .tabsBottom{
 	margin: 0 auto;
 	/*width: 65%;*/

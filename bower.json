@@ -2,7 +2,8 @@
   "name": "papaseguro",
   "private": true,
   "dependencies": {
-    "bootstrap": "~3.2.0"
+    "bootstrap": "~3.2.0",
+    "jquery": "~2.1.4"
   },
   "devDependencies": {
     "chai": "~3.0.0",
