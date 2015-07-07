@@ -425,6 +425,9 @@ section{
 .ventajas{
 	margin-left: 1em !important;
 }
+.white{
+	color:white;
+}
 .youtube{
 	margin-left: .5em;
 	margin-top: -3px;
@@ -462,6 +465,9 @@ section{
 @media screen and (max-width: 450px){
 	.textoEntrada h2{
 		font-size: 1.2em;
+	}
+	.iram{
+		width: 150px;
 	}
 }
 @media screen and (max-width: 350px){
