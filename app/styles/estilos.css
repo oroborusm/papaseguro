@@ -215,6 +215,9 @@ section{
 .iram{
 	width: 250px;
 }
+.italic{
+	font-style: italic;
+}
 .jumbotron{
 	/*background: rgba(130,150,195, .1);*/
 	
@@ -258,6 +261,9 @@ section{
 		width: 80%;
 	}
 
+.justificado{
+	text-align: justify;
+}
 .letraChica{
 	font-size: 10px !important;
 	margin-top: 2em;
