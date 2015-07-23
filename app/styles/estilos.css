@@ -366,6 +366,9 @@ section{
 .sinMargen{
 	margin: 0 !important;
 }
+.sinPuntos{
+	list-style: none;
+}
 .tab-content{
 	background: #eee;
 	border-radius: 5px !important;
@@ -389,7 +392,6 @@ section{
 .tab-content .listaClara li{
 	color: #666;
 	font-weight: normal;
-	list-style: none;
 	margin-bottom: .5em;
 	margin-left: 0;
 	text-align: justify;
