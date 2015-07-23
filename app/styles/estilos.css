@@ -369,6 +369,9 @@ section{
 .sinPuntos{
 	list-style: none;
 }
+	.sinPuntos li{
+		margin-left: 0 !important;
+	}
 .tab-content{
 	background: #eee;
 	border-radius: 5px !important;
@@ -393,7 +396,7 @@ section{
 	color: #666;
 	font-weight: normal;
 	margin-bottom: .5em;
-	margin-left: 0;
+	margin-left: 1em;
 	text-align: justify;
 }
 .tabsBottom{
