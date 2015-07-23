@@ -274,6 +274,10 @@ section{
 .listaGris li{
 	color: #666 !important;
 }
+.marginList{
+	font-size: 12px;
+	margin-right: 1em;
+}
 .modal-header{
 	border:none;
 }
@@ -373,7 +377,6 @@ section{
 	z-index: 5
 ;}
 .tab-content ul{
-	margin-left: 1em;
 	padding: 0;
 }
 	.tab-content li{
@@ -386,7 +389,10 @@ section{
 .tab-content .listaClara li{
 	color: #666;
 	font-weight: normal;
+	list-style: none;
 	margin-bottom: .5em;
+	margin-left: 0;
+	text-align: justify;
 }
 .tabsBottom{
 	margin: 0 auto;
