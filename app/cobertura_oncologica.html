@@ -36,26 +36,41 @@
               <img src="images/logo.png" alt="">
             </figure>
           </a>
+          <nav class="collapse navbar-collapse" id="js-navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a class="botonMenu" href="index.html"><span>Inicio</span></a></li>
+              <li><a class="botonMenu" href="papa-seguro.html"><span>Seguro Papá</span></a></li>
+              <li class="active"><a class="botonMenu" href="cobertura_oncologica.html"><span>Cobertura Oncológica</span></a></li>
+            </ul>
+          </nav>
 
         </div>
-        <nav class="collapse navbar-collapse" id="js-navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a class="botonMenu" href="index.html"><span>Inicio</span></a></li>
-            <li><a class="botonMenu" href="papa-seguro.html"><span>Seguro Papá</span></a></li>
-            <li class="active"><a class="botonMenu" href="cobertura_oncologica.html"><span>Cobertura Oncológica</span></a></li>
-          </ul>
-        </nav>
       </header>
       <div class="carousel slide carrusel" id="carrusel">
         <div class="carousel-inner" role="listbox">
           <div class="item active">
             <div class="imagenCarrusel" style="background-image:url(images/foto-1.jpg); background-position: center;"></div>
+            <div class="carousel-caption textoEntrada">
+              <h2>
+                Cuidamos de ti, para que <span>disfrutes la vida</span> con quienes más amas.
+              </h2>
+            </div>
           </div>
           <div class="item">
              <div class="imagenCarrusel" style="background-image:url(images/foto-2.jpg); background-position: center;"></div>
+             <div class="carousel-caption textoEntrada">
+               <h2>
+                 Verlos triunfar en la vida, es el mayor <span>anhelo de un padre.</span>
+               </h2>
+             </div>
           </div>
           <div class="item">
              <div class="imagenCarrusel" style="background-image:url(images/foto-3.jpg); background-position: center top;"></div>
+             <div class="carousel-caption textoEntrada">
+               <h2>
+                 <span>Seguro papá</span>, Mutual de Seguros de Chile
+               </h2>
+             </div>
           </div>
         </div>
         <a class="left carousel-control" href="#carrusel" role="button" data-slide="prev">
@@ -71,26 +86,23 @@
 
     <div class="container">
       <section>
-        <div class="jumbotron">
-          <div class="descripcion">
-            <h1>¿Qué es la <span class="azulClaro">Cobertura Oncológica</span>?</h1>
-            <br>
-            <p>Es una cobertura opcional adicional al plan de seguro de vida contratado, que brinda atención oncológica para el tratamiento de todo tipo de cáncer, en la Clínica Oncológica <span class="azulClaro">IRAM.</span>
-            </p>
-            <img class="iram" src="images/iram.png">
+        <div class="contenedor">
+          <div class="tabsBottom">
+            <ul id="tabs" class="nav nav-tabs nav-justified caract" data-tabs="tabs">
+                <li><a class="scroll" href="#cobertura" data-toggle="tab">Cobertura</a></li>
+                <li><a class="scroll" href="#ventajas" data-toggle="tab">Ventajas</a></li>
+                <li><a class="scroll" href="#prima" data-toggle="tab">Prima</a></li>
+                <li><a class="scroll" href="#exclusiones" data-toggle="tab">Exclusiones</a></li>
+            </ul>
           </div>
-        </div>
-        <div class="tabsBottom">
-          <ul id="tabs" class="nav nav-tabs nav-justified caract" data-tabs="tabs">
-              <li><a class="scroll" href="#cobertura" data-toggle="tab">Cobertura</a></li>
-              <li><a class="scroll" href="#ventajas" data-toggle="tab">Ventajas</a></li>
-              <li><a class="scroll" href="#prima" data-toggle="tab">Prima</a></li>
-              <li><a class="scroll" href="#exclusiones" data-toggle="tab">Exclusiones</a></li>
-          </ul>
-        </div>
-        <div id="my-tab-content scrollspy" class="tab-content">
-            <div class="objetivo"></div>
-            <div class="tab-pane contentTab" id="cobertura">
+          <div id="my-tab-content scrollspy" class="tab-content inlineBlock middle">
+              <div class="objetivo"></div>
+              <div class="tab-pane contentTab fade in active" id="cobertura">
+                <h1>¿Qué es la <span class="azulClaro">Cobertura Oncológica</span>?</h1>
+                <br>
+                <p>Es una cobertura opcional adicional al plan de seguro de vida contratado, que brinda atención oncológica para el tratamiento de todo tipo de cáncer, en la Clínica Oncológica <span class="azulClaro">IRAM.</span>
+                </p>
+                
                 <h2>¿Qué cubre la Cobertura Oncológica?</h2>
                 <br>
                 <ul class="listaClara sinPuntos">
@@ -105,64 +117,70 @@
                   <li><span class="glyphicon glyphicon-ok marginList azulClaro" aria-hidden="true"></span>Todo nuevo tratamiento oncológico en cualquier oportunidad después del tratamiento inicial.</li>
                 </ul>
                 <br>
-                <p>Para acceder al tratamiento se requiere presentar un diagnóstico de cáncer <span class="italic">(biopsia)</span> realizado durante la vigencia de la cobertura oncológica.</p>
+                <p class="italic">Para acceder al tratamiento se requiere presentar un diagnóstico de cáncer <span class="azulClaro">(biopsia)</span> realizado durante la vigencia de la cobertura oncológica.</p>
                 <p>Para revisar todas las coberturas y especificaciones haz clic <a href="https://www.mutualdeseguros.cl/wp-content/uploads/2015/07/CAD320150678.pdf" target="_blank">aquí</a>.</p></p>
-            </div>
+              </div>
 
-            <div class="tab-pane contentTab" id="ventajas">
-                <h2>Ventajas</h2>
-                <br>
-                <ul class="listaClara">
-                  <li class="justificado"><span class="azulClaro bold">Cubre todo tipo de cáncer</span>, sin importar el número de tratamientos que sean necesarios para tratar la enfermedad por el mismo o nuevos cánceres.</li>
-                  <li class="justificado"><span class="azulClaro bold">No posee deducibles.</span></li>
-                  <li class="justificado"><span class="azulClaro bold">Entrega exámenes sin costo</span> para la detección precoz del cáncer de próstata (Un examen anual de antígeno prostático específico a contar de los 45 años).</li>
-                  <li class="justificado"><span class="azulClaro bold">Tratamiento entregado por IRAM</span>, clínica oncológica experta en el tratamiento del cáncer que cuenta con reconocimiento nacional e internacional.</li>
-                </ul>
-            </div>
-            <div class="tab-pane contentTab" id="prima">
-                <h2>Prima</h2>
-                <br>
-            
-                <div class="container">
-                  <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th>Edad de incorporación:</th>
-                        <th>Prima (IVA Incluido)</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>18 a 54 años</td>
-                        <td>0,20 UF</td>
-                      </tr>
-                      <tr>
-                        <td>55 años a 64 años con 365 días</td>
-                        <td>0,78 UF</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div class="tab-pane fade contentTab" id="ventajas">
+                  <h2>Ventajas</h2>
+                  <br>
+                  <ul class="listaClara">
+                    <li class="justificado"><span class="azulClaro bold">Cubre todo tipo de cáncer</span>, sin importar el número de tratamientos que sean necesarios para tratar la enfermedad por el mismo o nuevos cánceres.</li>
+                    <li class="justificado"><span class="azulClaro bold">No posee deducibles.</span></li>
+                    <li class="justificado"><span class="azulClaro bold">Entrega exámenes sin costo</span> para la detección precoz del cáncer de próstata (Un examen anual de antígeno prostático específico a contar de los 45 años).</li>
+                    <li class="justificado"><span class="azulClaro bold">Tratamiento entregado por IRAM</span>, clínica oncológica experta en el tratamiento del cáncer que cuenta con reconocimiento nacional e internacional.</li>
+                  </ul>
+              </div>
+              <div class="tab-pane fade contentTab" id="prima">
+                  <h2>Prima</h2>
+                  <br>
+              
+                  <div class="container">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>Edad de incorporación:</th>
+                          <th>Prima (IVA Incluido)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>18 a 54 años</td>
+                          <td>0,20 UF</td>
+                        </tr>
+                        <tr>
+                          <td>55 años a 64 años con 365 días</td>
+                          <td>0,78 UF</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
 
-                <p><span class="azulClaro bold">Nota:</span> Si el asegurado tiene la cobertura adicional contratada y cambia de rango etario, la prima de la cobertura no sufrirá modificaciones.</p>
-            </div>
-            <div class="tab-pane contentTab" id="exclusiones">
-                <h2>Exclusiones</h2>
-                <br>
-                <ul class="listaClara">
-                  <li>No se podrán incorporar personas que han sido diagnosticadas y/o tratadas por cualquier tipo de cáncer.</li>
-                  <li>No se podrán incorporar personas que han sido diagnosticadas con el virus <span class="azulClaro">H.I.V. (SIDA)</span> o el virus de <span class="azulClaro">Hepatitis B o C</span>.</li>
-                  <li>La incorporación es hasta los 64 años con 365 días.</li>
-                  <li>No cubre gastos de diagnóstico de cáncer <span class="italic">(biopsia)</span>.</li>
-                  <li>No cubre gastos por procedimientos no autorizados no derivados por el médico tratante de <span class="azulClaro">IRAM</span> <span class="italic">(exámenes, consultas, hospitalizaciones u otros)</span>.</li>
-                  <li>Tratamientos psiquiátricos y psicológicos, estéticos, kinésicos o de rehabilitación.</li>
-                  <li>Cualquier tipo de prótesis y órtesis.</li>
-                  <li>La asistencia oncológica sólo opera en Santiago. No considera traslados ni estadía.</li>
-                  <li>El Asegurado deberá contar con afiliación al sistema de <span class="azulClaro">ISAPRE o FONASA (B, C o D)</span> al momento de la suscripción de la cobertura, quedando excluido el tramo A de <span class="azulClaro">FONASA</span>.</li>
-                  <li>Posee 30 días de carencia desde el momento en que se toma la asistencia oncológica.</li>
-                </ul>
-            </div>
+                  <p><span class="azulClaro bold">Nota:</span> Si el asegurado tiene la cobertura adicional contratada y cambia de rango etario, la prima de la cobertura no sufrirá modificaciones.</p>
+              </div>
+              <div class="tab-pane fade contentTab" id="exclusiones">
+                  <h2>Exclusiones</h2>
+                  <br>
+                  <ul class="listaClara">
+                    <li>No se podrán incorporar personas que han sido diagnosticadas y/o tratadas por cualquier tipo de cáncer.</li>
+                    <li>No se podrán incorporar personas que han sido diagnosticadas con el virus <span class="azulClaro">H.I.V. (SIDA)</span> o el virus de <span class="azulClaro">Hepatitis B o C</span>.</li>
+                    <li>La incorporación es hasta los 64 años con 365 días.</li>
+                    <li>No cubre gastos de diagnóstico de cáncer <span class="italic">(biopsia)</span>.</li>
+                    <li>No cubre gastos por procedimientos no autorizados no derivados por el médico tratante de <span class="azulClaro">IRAM</span> <span class="italic">(exámenes, consultas, hospitalizaciones u otros)</span>.</li>
+                    <li>Tratamientos psiquiátricos y psicológicos, estéticos, kinésicos o de rehabilitación.</li>
+                    <li>Cualquier tipo de prótesis y órtesis.</li>
+                    <li>La asistencia oncológica sólo opera en Santiago. No considera traslados ni estadía.</li>
+                    <li>El Asegurado deberá contar con afiliación al sistema de <span class="azulClaro">ISAPRE o FONASA (B, C o D)</span> al momento de la suscripción de la cobertura, quedando excluido el tramo A de <span class="azulClaro">FONASA</span>.</li>
+                    <li>Posee 30 días de carencia desde el momento en que se toma la asistencia oncológica.</li>
+                  </ul>
+              </div>
+          </div>
+          <figure class="iramContainer">
+            <img class="iram" src="images/iram.png">
+            <img class="circulares tecnologia" src="images/tecnologia.jpg" alt="Mejor tecnologia">
+          </figure>
         </div>
+
         
       </section>
     </div>
@@ -189,7 +207,8 @@
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
+     <!--
+     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
@@ -197,6 +216,7 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
+    -->
 
         <!-- build:js(.) scripts/plugins.js -->
         <script src="bower_components/bootstrap/js/affix.js"></script>

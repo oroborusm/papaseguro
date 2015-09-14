@@ -26,5 +26,4 @@
 			scrollTop: $(".objetivo").offset().top
 		},1000);
 	});
-
 })();

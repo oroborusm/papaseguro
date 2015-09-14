@@ -1,6 +1,40 @@
+@font-face {
+    font-family: 'futura_ltbook';
+    src: url('../fonts/futuralt-book-webfont.eot');
+    src: url('../fonts/futuralt-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/futuralt-book-webfont.woff2') format('woff2'),
+         url('../fonts/futuralt-book-webfont.woff') format('woff'),
+         url('../fonts/futuralt-book-webfont.ttf') format('truetype'),
+         url('../fonts/futuralt-book-webfont.svg#futura_ltbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'futura_ltbookoblique';
+    src: url('../fonts/futuralt-bookoblique-webfont.eot');
+    src: url('../fonts/futuralt-bookoblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/futuralt-bookoblique-webfont.woff2') format('woff2'),
+         url('../fonts/futuralt-bookoblique-webfont.woff') format('woff'),
+         url('../fonts/futuralt-bookoblique-webfont.ttf') format('truetype'),
+         url('../fonts/futuralt-bookoblique-webfont.svg#futura_ltbookoblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 body{
+	/* font-size: 16px; */
 	margin: 0;
 	padding: 0;
+}
+body, html{
+	height:100%;
 }
 footer{
 	background: #112659;
@@ -9,42 +43,50 @@ footer{
 }
 header{
 	box-shadow: 0 0 10px black;
-	left: 5%;
-	position: absolute;
+	/* left: 5%; */
+	margin: 0 auto;
+	position: relative;
 	top: 10px;
 	width: 90%;
-	z-index: 5;
+	max-width: 1200px;
+	z-index: 15;
 }
 nav{
 	/*background: #337ab7;*/
-	background: #112659;
-	border-bottom: 4px solid #005db9 !important;
+	/*background: #112659; */
+	/* border-bottom: 4px solid #005db9 !important; */
 	display: block;
 	text-transform: uppercase;
 	width: 100%;
 }
 	nav li{
+		/* background: #eee; */
 		padding: 0 !important;
 	}
 	.active .botonMenu{
-		color: #FFCD55;
-		font-weight: 800;
+		border-bottom: 4px solid #428bca;
+	}
+	.active .botonMenu span{
+		color: #f8b302 !important;
 	}
 	.botonMenu{
-		color: white;
+		font-family: "futura_ltbookoblique";
 		line-height: 20px !important;
 		margin: 0;
 		padding: 10px 0 10px 18px !important;
+		transition: .3s;
 	}
-	.botonMenu:hover{
+	/* .botonMenu:hover{
 		background: #eaeaea;
-	}
+	} */
 	.botonMenu span{
-		border-right: 1px solid #eaeaea;
+		/* border-right: 1px solid #eaeaea; */
+		color: #428bca;
+		font-weight: 800;
 		padding: 0 18px 0 0  !important;		
 	}
-	.botonMenu:hover .botonMenu span{
-		border-right: 1px solid transparent;
+	.botonMenu:hover > span{
+		color: white !important;
 	}
 section{
 	margin-bottom: 3em;
@@ -53,7 +95,7 @@ section{
 	max-width: 1200px;
 	position: relative;
 	width: 90%;
-	z-index: 6;
+	z-index: 4;
 }
 .adjunto{
 	border: 2px solid transparent;
@@ -63,7 +105,6 @@ section{
 	font-weight: 600;
 	margin: 0 auto;
 	padding: .5em 1.5em;
-	text-transform: uppercase;
 	width: 100%;
 }
 	.adjunto:hover{
@@ -92,7 +133,8 @@ section{
 	font-weight: 600;
 }
 .cabecera{
-	height: 450px;
+	height: 100%;
+	max-height: 700px;
 	margin: 0;
 	position: relative;
 }
@@ -107,11 +149,25 @@ section{
 .capitulizar{
 	text-transform: capitalize !important;
 }
+.carousel-inner{
+	height: 100%;
+	max-height: 700px;
+}
 .carrusel{
+	border-bottom: 8px solid #337ab7;
+	height: 100%;
+	max-height: 700px;
 	margin: 0 auto;
 	position: absolute;
 	top: 0;
 	width: 100%;
+}
+/* .carousel-caption{
+	text-shadow: none !important;
+} */
+.circulares{
+	border: 6px solid rgba(0, 157 , 224, .3);
+	border-radius: 50%;
 }
 .contacto,
 .mutual{
@@ -134,23 +190,81 @@ section{
 		text-transform: uppercase;
 	}
 .container{
-	margin-top: 1em;
+	/* margin-top: 1em; */
 	max-width: 100% !important;
 	padding: 0;
 	position: relative;
 	width: 100%;
 }
-.contentTab{
-	margin: 0 auto;
-	padding: 3em 0 2em;
-	width: 80%;
-}
-	.contentTab h2{
-		margin-bottom: 1em;
+	.contenedor .row{
+		/* border: 1px solid #ddd; */
+		box-sizing: border-box;
+		margin: 0 0 1em 0;
+		/* padding: 0 2em; */
+		width: 60%;		
 	}
-.contenedorBoton{
-	margin-top: 2em;
+		.contenedor .descripcion{
+			font-family: 'Cabin', sans-serif;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 1em;
+			width: 100%;
+		}
+			.descripcion figure{
+				margin: 0;
+				padding: 0;
+				text-align: center;
+			}
+		.contImg{
+			box-sizing: border-box;
+			margin: 0;
+		}
+			.contImg img{
+				width: 49%;
+			}
+			.contImg .iram{
+				width: 200px;
+			}
+
+.contenedor {
+	border-radius: 0;
+	margin: 2em auto 0;
+	padding: 0 !important;
 	text-align: center;
+	/* width: 719px; */
+	width: 80%;
+	max-width: 950px;
+	z-index: 5;
+}
+	.contenedor h1,
+	.tab-content h2,
+	.resalta{
+		color: #112659;
+		font-size: 18px;
+		font-weight: 600;
+		margin:0;
+		text-align: left;
+		text-transform: uppercase;
+	}
+	.contenedor p{
+		color: #666;
+		font-size: 16px;
+		text-align: justify;
+	}
+	.contenedor ul{
+		margin: 2em 0 0 0;
+		padding: 0;
+		text-align: left;
+	}
+	.contenedor li{
+		margin: .5em 0;
+	}
+
+.contenedorBoton{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+	width: 250px;
 }
 	.contenedorBoton button{
 		background: white;
@@ -164,25 +278,43 @@ section{
 		color: #2a6496;
 		text-decoration: underline;
 	}
+
+.contentTab{
+	margin: 0 auto;
+	padding: 3em 0 2em;
+	width: 80%;
+}
+	.contentTab h2{
+		margin-bottom: 1em;
+	}
+
 .descargas{
 	/*background: rgba(130,150,195,.1);*/
 	background: #337ab7;
-	border-radius: 0 0 5px 5px;
-	margin: 0 auto;
-	padding: 1em;
+	/* border-radius: 0 0 5px 5px; */
+	margin: 0;
+	padding: .2em 1em;
 	text-align: center;
 	transition:.2s;
-	/*width: 60%*/
-	width: 719px;
+	width: 250px;
+	/* width: 719px; */
 }
 	.descargas:hover{
-		background: #1EBEB4;
+		background: #f8b302;
 	}
-	.descripcion ul{
-		text-align: justify !important;
-	}
+.descripcion ul{
+	text-align: justify !important;
+}
 .enLinea{
 	display: inline-block;
+}
+
+.fondoAzul{
+	background: #337ab7;
+	box-sizing: border-box;
+	margin: 0;
+	padding: .5em 1em;
+	text-align: left;
 }
 
 .fotoLeft,
@@ -208,58 +340,64 @@ section{
 	margin-top: 10px;
 }
 
+.futuraBold{
+	font-family: "futura_ltbook";
+}
+.futuraItalic{
+	font-family: "futura_ltbookoblique";
+}
+
 .imagenCarrusel{
 	background-size: cover;
-	height: 450px;
+	height: 100%;
+	max-height: 700px;
+	width: 100%;
 }
+
+.imagenes{
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 1em 0;
+	text-align: center;
+	max-width: 950px;
+}
+
+.imagenes .iram{
+	margin: 0 10px 0 0;
+	width: 30%;
+	max-width: 170px;
+}
+
+.imagenes .circulares{
+	margin: 0 10px 0 0;
+	width: 25%;
+	max-width: 150px;
+}
+
+.inlineBlock{
+	display: inline-block;
+}
+
 .iram{
 	width: 250px;
 }
+
+.iramContainer{
+	display: inline-block;
+	vertical-align: middle;
+	width: 39%;
+}
+
 .italic{
 	font-style: italic;
 }
-.jumbotron{
-	/*background: rgba(130,150,195, .1);*/
-	
-	/*border-bottom: 2px solid #005db9;*/
-	border-radius: 5px 5px 0 0 !important;
-	/*border-top: 2px solid #005db9;*/
-	/*box-shadow: 0 0 5px #005db9;*/
-	margin: -50px auto 0 auto;
-	padding: 0 !important;
-	/*width: 60%;*/
-	width: 719px;
-	z-index: 5;
+
+.item{
+	height: 100%;
+	max-height: 700px;
 }
-	.jumbotron h1,
-	.tab-content h2,
-	.resalta{
-		color: #112659;
-		font-size: 20px;
-		font-weight: 600;
-		margin:0;
-		text-align: left;
-	}
-	.jumbotron p{
-		color: #666;
-		font-size: 16px;
-		text-align: justify;
-	}
-	.jumbotron ul{
-		margin: 2em 0 0 0;
-		padding: 0;
-		text-align: left;
-	}
-	.jumbotron li{
-		margin: .5em 0;
-	}
-	.jumbotron .descripcion{
-		font-family: 'Cabin', sans-serif;
-		margin-left: auto;
-		margin-right: auto;
-		padding: 3em 0 2em;
-		width: 80%;
-	}
 
 .justificado{
 	text-align: justify;
@@ -268,37 +406,67 @@ section{
 	font-size: 10px !important;
 	margin-top: 2em;
 }
+.linksTo{
+	margin-left: 6%;
+	/* padding: 1em 3em; */
+	width: 33%;
+}
+	.linksTo ul{
+		margin: 0 !important;
+		padding: 0;
+	}
+	.linksTo li{
+		background: #f2f2f2;
+		border: 1px solid #ddd;
+		margin: 0 0 3px 0;
+	}
+	.linksTo li:hover > a{
+		background: #f8b302 !important;
+	}
 .listaGris{
 	margin-top: 1em;
 }
 .listaGris li{
 	color: #666 !important;
 }
+
+.mapa iframe{
+	height: 400px !important;
+	width: 100% !important;
+}
+
 .marginList{
 	font-size: 12px;
 	margin-right: 1em;
 }
+
+.middle{
+	vertical-align: middle;
+}
+
 .modal-header{
 	border:none;
 }
 .mutualheader{
-	background: rgba(255,255,255, .8) !important;
-	background: white;
+	background: rgba(255,255,255, .9) !important;
+	background: white; 
+	border-bottom: 4px solid #005db9 !important;
 	display: block;
 	height: 90px;
+	padding: 17px 0;
 	position: relative;
 }
 	.contenedorLogo{
-		padding: 15px 10px;
+		/* padding: 15px 10px; */
 		position: absolute;
 		right: 1em;
 	}
 	.contenedorLogo img{
 		width: 125px;
 	}
-.nav{
+/* .nav{
 	background: #112659;
-}
+} */
 	.nav li{
 		border-radius: 0;
 	}
@@ -329,6 +497,26 @@ section{
 	.icon-bar{
 		background: rgba(1,172,246, 1);
 	}
+
+.otraSeccion{
+	background: #337ab7;
+	height: 300px;
+}
+
+.otraSeccion .seccionInt{
+	background-attachment: fixed;
+	background-image: url('../images/tecnologiaFondo.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    display: block;
+	height: 100%;
+	margin: 0 auto;
+	padding: 4em 0;
+    width: 100%;
+}
+
 .pagos{
 	/*background: aliceblue;*/
 	margin: 2em auto 1em;
@@ -373,13 +561,12 @@ section{
 		margin-left: 0 !important;
 	}
 .tab-content{
-	background: #eee;
+	/* background: #eee; */
 	border-radius: 5px !important;
-	margin-left: auto;
-	margin-right: auto;
+	margin:0;
 	padding: 0 !important;
-	/*width: 60%;*/
-	width:719px;
+	width: 60%;
+	max-width:719px;
 	z-index: 5
 ;}
 .tab-content ul{
@@ -402,8 +589,12 @@ section{
 .tabsBottom{
 	margin: 0 auto;
 	/*width: 65%;*/
-	width: 719px;
+	/* width: 719px; */
 }
+	.nav-tabs.nav-justified{
+		margin: 0;
+		padding: 0;
+	}
 	.nav-tabs.nav-justified > li > a{
 		font-size: 13px !important;
 		border: none !important;
@@ -415,27 +606,56 @@ section{
 		border: none !important;
 		color: white !important;
 	}
+
+.tecnologia{
+	width: 200px;
+}
+
 .textoEntrada{
-	background: rgba(130,150,195, .5) !important;
+	background: rgba(153, 153, 153, .5) !important;
 	background: #112659;
 	bottom: initial !important;
+	font-family: "futura_ltbook";
+	margin-right: -300px;
 	max-width: 600px !important;
 	padding: 1em;
-	top: 60%;
+	top: 40%;
+	right: 50%;
 }
 	.textoEntrada h2{
 		color: white;
-		font-size: 1.5em;
+		font-size: 3em;
 		font-weight: 600;
 		margin: 0;
 		text-align: left;
 		/*text-shadow: 0 0 10px #112659;*/
 	}
-	.textoEntrada span{
-		color: #FFCD55;
-		font-size: 125%;
-		/*text-shadow: 0 0 2px white;*/
+	.textoEntrada .amarillo{
+		color: #f8b302;	
 	}
+	.textoEntrada .fontChico{
+		font-size: 80%;
+	}
+	.textoEntrada .fontGrande{
+		font-size: 150%;
+		/*text-shadow: 0 0 2px white;*/
+		text-transform: uppercase;
+	}
+	.gris{
+		color: #262f38 !important;	
+	}
+
+.titulo{
+	border-bottom: 2px solid #428bca; 
+	color: #428bca;
+	font-size: 2em;
+	text-align: left;
+	margin: 0;
+}
+
+.top{
+	vertical-align: top;
+}
 .uppercase{
 	text-transform: uppercase;
 }
@@ -456,7 +676,10 @@ section{
 	.botonMenu span{
 		border-right: 0;		
 	}
-	.jumbotron, .descargas, .tabsBottom, .tab-content, .pagos{
+	.contenedor{
+		padding: 0 1em !important;
+	}
+	.contenedor, .contenedorBoton, .descargas, .tabsBottom, .tab-content, .pagos{
 		width: 100%;
 	}
 	.fotosFooter{
@@ -479,6 +702,28 @@ section{
 		width: 100%;
 	}
 }
+@media screen and (max-width: 767px){
+	.navbar-collapse{
+		background: #112659;
+		margin-top: 70px;
+	}
+}
+@media screen and (max-width: 650px){
+	.textoEntrada{
+		margin: 0 !important;
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.linksTo{
+		margin: 0 !important;
+	}
+	.row, .linksTo{
+		width: 100% !important;
+	}
+}
+
 @media screen and (max-width: 450px){
 	.textoEntrada h2{
 		font-size: 1.2em;

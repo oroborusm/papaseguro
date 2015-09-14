@@ -17,6 +17,10 @@
     <link href="styles/video-js.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/estilos.css">
     <!-- endbuild -->
+
+    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -37,15 +41,15 @@
               <img src="images/logo.png" alt="">
             </figure>
           </a>
+          <nav class="collapse navbar-collapse" id="js-navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a class="botonMenu" href="index.html"><span>Inicio</span></a></li>
+              <li><a class="botonMenu" href="papa-seguro.html"><span>Seguro Papá</span></a></li>
+              <li><a class="botonMenu" href="cobertura_oncologica.html"><span>Cobertura Oncológica</span></a></li>
+            </ul>
+          </nav>
 
         </div>
-        <nav class="collapse navbar-collapse" id="js-navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a class="botonMenu" href="index.html"><span>Inicio</span></a></li>
-            <li><a class="botonMenu" href="papa-seguro.html"><span>Seguro Papá</span></a></li>
-            <li><a class="botonMenu" href="cobertura_oncologica.html"><span>Cobertura Oncológica</span></a></li>
-          </ul>
-        </nav>
       </header>
       <div class="carousel slide carrusel" id="carrusel">
         <div class="carousel-inner" role="listbox">
@@ -53,7 +57,9 @@
             <div class="imagenCarrusel" style="background-image:url(images/foto-1.jpg); background-position: center;"></div>
             <div class="carousel-caption textoEntrada">
               <h2>
-                Cuidamos de ti, para que <span>disfrutes la vida</span> con quienes más amas.
+                <span class="gris fontChico">Cuidamos de ti, para que</span><br>
+                <span class="amarillo fontGrande"><span class="azulClaro">disfrutes</span> la vida</span><br>
+                con quienes más amas.
               </h2>
             </div>
           </div>
@@ -61,7 +67,10 @@
              <div class="imagenCarrusel" style="background-image:url(images/foto-2.jpg); background-position: center;"></div>
              <div class="carousel-caption textoEntrada">
                <h2>
-                 Verlos triunfar en la vida, es el mayor <span>anhelo de un padre.</span>
+                  <span class="gris fontChico">Verlos triunfar en la vida,</span><br>
+                  es el mayor<br>
+                  <span class="azulClaro fontGrande">anhelo de</span><br>
+                  <span class="amarillo fontGrande"> un padre.</span>
                </h2>
              </div>
           </div>
@@ -69,7 +78,8 @@
              <div class="imagenCarrusel" style="background-image:url(images/foto-3.jpg); background-position: center top;"></div>
              <div class="carousel-caption textoEntrada">
                <h2>
-                 <span>Seguro papá</span>, Mutual de Seguros de Chile
+                 <span class="amarillo fontGrande"><span class="azulClaro">Seguro</span> papá</span><br>
+                 <span class="fontChico gris">Mutual de Seguros</span class="fontChico"><span>  de Chile</span>
                </h2>
              </div>
           </div>
@@ -86,29 +96,52 @@
     </div>
 
     <div class="container">
-      <section>
-        <div class="jumbotron">
+      <section class="contenedor">
+        <div class="row inlineBlock top">
+          <h2 class="futuraItalic titulo">¿Qué es el Seguro Papá?</h2>
           <div class="descripcion">
             <p>
-              <span class="resalta">Seguro <span class="azulClaro">Papá</span></span> es un seguro de vida diseñado especialmente para el Papá y sus hijos, con cobertura principal de fallecimiento del asegurado titular.
+              <span class="resalta futuraItalic">Seguro Papá</span> es un seguro de vida diseñado especialmente para el Papá y sus hijos, con cobertura principal de fallecimiento del asegurado titular.
             </p>
             <p>
-              Además, contempla la opción de asegurar la educación de tus hijos en caso de fallecimiento, a través del pago de una renta anual, brinda la posibilidad de ahorrar a la medida con una rentabilidad garantizada, y te da la alternativa de protegerte contra el cáncer, a través de un convenio con el <span class="azulOscuro">Instituto de Radio Medicina de Chile</span> <span class="resalta"><span class="azulClaro">(IRAM)</span></span>.
+              Además, contempla la opción de asegurar la educación de tus hijos en caso de fallecimiento, a través del pago de una renta anual, brinda la posibilidad de ahorrar a la medida con una rentabilidad garantizada, y te da la alternativa de protegerte contra el cáncer, a través de un convenio con el Instituto de Radio Medicina de Chile <span class="resalta futuraItalic">(IRAM)</span>.
             </p>
-  
+
+          </div>         
+        </div>
+        <aside class="linksTo inlineBlock top">
+          <ul class="nav">
+            <li><a class="botonMenu" href="papa-seguro.html"><span class="futuraBold gris">Seguro Papá</span></a></li>
+            <li><a class="botonMenu" href="cobertura_oncologica.html"><span class="futuraBold gris">Cobertura Oncológica</span></a></li>
+          </ul>
+        </aside>        
+      </section>
+      
+
+      <div class="contenedor">
+         
+          <div class="descargas">
+            <a class="adjunto" href="adjuntos/seguropapa.pdf" target="_blank">
+              <span class="futuraBold">Descargar folleto</span>
+              <img src="images/pdf.png" alt="">
+            </a>  
+          </div>
+          <div class="contenedorBoton">
+            <button id="abrevideo" type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal">Volver a ver el vídeo <img class="youtube" src="images/youtube.png" alt="">
+          </div>
+
+      </div>
+      <div class="otraSeccion">
+        <div class="seccionInt">
+          <div class="imagenes">
+            <img class="iram" src="images/logoBlanco.png">
+            <img class="circulares" src="images/tecnologia.jpg" alt="Decisión en tus manos">
+            <img class="circulares" src="images/tecnologia2.jpg" alt="Mejor tecnologia">
           </div>
         </div>
-        <aside class="descargas">
-          <a class="adjunto" href="adjuntos/seguropapa.pdf" target="_blank">
-            <span>Descargar folleto</span>
-            <img src="images/pdf.png" alt="">
-          </a>  
-        </aside>
-        <div class="contenedorBoton">
-          <button id="abrevideo" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Volver a ver el vídeo <img class="youtube" src="images/youtube.png" alt="">
-        </div>
-        
-      </section>
+      </div>
+
+
         <div class="modal fade video" id="myModal" role="dialog">
           <div class="modal-dialog">
           
@@ -132,6 +165,9 @@
           </div>
         </div>
     </div>
+    <div class="mapa">
+      <div id="map-canvas" style="height:400px; width:100%;"></div>
+    </div>
 
     <footer>
       <div class="mutual">
@@ -147,6 +183,8 @@
       </div>
     </footer>
 
+    
+
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -155,7 +193,8 @@
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
+     <!--
+     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
@@ -163,6 +202,7 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
+    -->
 
         <!-- build:js(.) scripts/plugins.js -->
         <script src="bower_components/bootstrap/js/affix.js"></script>
@@ -181,8 +221,10 @@
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <script src="scripts/map.js"></script>
         <!-- endbuild -->
         
         <script src="scripts/video.js"></script>
+
 </body>
 </html>
