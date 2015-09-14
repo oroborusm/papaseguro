@@ -435,7 +435,6 @@ section{
 	margin-left: 6%;
 	margin-top: 2em;
 	/* padding: 1em 3em; */
-	min-width: 250px;
 	width: 33%;
 }
 	.linksTo ul{
@@ -451,6 +450,7 @@ section{
 		background: #f8b302 !important;
 	}
 	.imgAside img{
+		min-width: 250px;
 		width: 100%;
 	}
 .listaGris{
@@ -740,6 +740,11 @@ table{
 		width: 100%;
 	}
 	.contenedor, .contenedorBoton, .descargas, .tabsBottom, .tab-content, .pagos{
+		width: 100%;
+	}
+
+	.linksTo {
+		margin: 0 !important;
 		width: 100%;
 	}
 	.fotosFooter{
