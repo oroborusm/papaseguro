@@ -230,6 +230,7 @@ section{
 	border-radius: 0;
 	margin: 2em auto 0;
 	padding: 0 !important;
+	position: relative;
 	text-align: center;
 	/* width: 719px; */
 	width: 80%;
@@ -264,7 +265,7 @@ section{
 	margin-top: 1em;
 	margin-bottom: 1em;
 	text-align: center;
-	width: 250px;
+	width: 60%;
 }
 	.contenedorBoton button{
 		background: white;
@@ -289,15 +290,14 @@ section{
 	}
 
 .descargas{
-	/*background: rgba(130,150,195,.1);*/
-	background: #337ab7;
+	background: rgba(51,122,183, 1);
+	/* background: #337ab7; *
 	/* border-radius: 0 0 5px 5px; */
 	margin: 0;
 	padding: .2em 1em;
 	text-align: center;
 	transition:.2s;
-	width: 250px;
-	/* width: 719px; */
+	width: 60%;
 }
 	.descargas:hover{
 		background: #f8b302;
@@ -315,6 +315,23 @@ section{
 	margin: 0;
 	padding: .5em 1em;
 	text-align: left;
+}
+
+.fondoGris{
+	background: #fbfbfb;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	padding: 16px 2em;
+}
+
+.fondoInt{
+	/* background: #337ab7; */
+	background: #fbfbfb;
+	border-bottom: 2px solid #428bca;
+	border-top: 4px solid #428bca;
+	box-sizing: border-box;
+	margin: 2em auto;
+	padding: 2em 0;
 }
 
 .fotoLeft,
@@ -338,6 +355,14 @@ section{
 	color: white;
 	display: block;
 	margin-top: 10px;
+}
+
+.fuenteMediana{
+	font-size: 14px !important;
+}
+
+.fuenteNormal{
+	font-size: 1em !important;
 }
 
 .futuraBold{
@@ -400,15 +425,17 @@ section{
 }
 
 .justificado{
-	text-align: justify;
+	text-align: justify !important;
 }
 .letraChica{
 	font-size: 10px !important;
 	margin-top: 2em;
 }
-.linksTo{
+.linksTo, .imgAside{
 	margin-left: 6%;
+	margin-top: 2em;
 	/* padding: 1em 3em; */
+	min-width: 250px;
 	width: 33%;
 }
 	.linksTo ul{
@@ -422,6 +449,9 @@ section{
 	}
 	.linksTo li:hover > a{
 		background: #f8b302 !important;
+	}
+	.imgAside img{
+		width: 100%;
 	}
 .listaGris{
 	margin-top: 1em;
@@ -438,6 +468,9 @@ section{
 .marginList{
 	font-size: 12px;
 	margin-right: 1em;
+}
+.marginTopZero{ 
+	margin-top: 0 !important;
 }
 
 .middle{
@@ -487,6 +520,11 @@ section{
 		background: #005db9 !important;
 		border-radius: 0 !important;
 	}
+
+.naranjo{
+	color: #f8b302;
+}
+
 .navMobile{
 	left: 0;
 	margin: -17px 0 0 0;
@@ -497,6 +535,12 @@ section{
 	.icon-bar{
 		background: rgba(1,172,246, 1);
 	}
+
+.openSans{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #666 !important;
+	font-weight: normal !important;
+}
 
 .otraSeccion{
 	background: #337ab7;
@@ -574,7 +618,7 @@ section{
 }
 	.tab-content li{
 		color: #112659;
-		font-weight: 600;
+		/* font-weight: 600; */
 	}
 	.tab-content p{
 		text-align: justify;
@@ -586,11 +630,11 @@ section{
 	margin-left: 1em;
 	text-align: justify;
 }
-.tabsBottom{
+/* .tabsBottom{
 	margin: 0 auto;
-	/*width: 65%;*/
-	/* width: 719px; */
-}
+	width: 65%;
+	width: 719px;
+} */
 	.nav-tabs.nav-justified{
 		margin: 0;
 		padding: 0;
@@ -602,10 +646,14 @@ section{
 	}
 
 	.tabsBottom li.active > a{
-		background:  #005db9 !important;
+		/* background:  #005db9 !important; */
 		border: none !important;
 		color: white !important;
 	}
+
+table{
+	text-align: left;
+}
 
 .tecnologia{
 	width: 200px;
@@ -659,9 +707,15 @@ section{
 .uppercase{
 	text-transform: uppercase;
 }
-.ventajas{
+.ventajas, .listaIntena{
 	margin-left: 1em !important;
 }
+	.listaIntena li{
+		font-family: "futura_ltbookoblique"
+	}
+	.ventajas li{
+		font-family: "futura_ltbook";
+	}
 .white{
 	color:white;
 }
@@ -673,11 +727,17 @@ section{
 
 
 @media screen and (max-width: 800px){
+	.abajoDelMenu{
+		margin-top: 150px !important;
+	}
 	.botonMenu span{
 		border-right: 0;		
 	}
 	.contenedor{
 		padding: 0 1em !important;
+	}
+	.contenedor .row{
+		width: 100%;
 	}
 	.contenedor, .contenedorBoton, .descargas, .tabsBottom, .tab-content, .pagos{
 		width: 100%;
@@ -689,6 +749,12 @@ section{
 		padding-left: .8em;
 		text-align: left;
 		width: 100%;
+	}
+	.menuArriba{
+		left: 0;
+		margin: 0;
+		position: absolute;
+		top: -55px;
 	}
 	.pagos figure{
 		border-bottom: 0;
