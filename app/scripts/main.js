@@ -1,7 +1,5 @@
 (function(){
-	$('#myModal').modal({
-	  show: true
-	});
+
 	$('.carousel').carousel({
 		controls:true
 	});
@@ -26,4 +24,11 @@
 			scrollTop: $(".objetivo").offset().top
 		},1000);
 	});
+
+	if(localStorage.getItem('popState') != 'shown'){
+		$('#myModal').modal({
+			show: true
+		});
+		localStorage.setItem('popState','shown')
+    }
 })();
