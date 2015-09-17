@@ -37,12 +37,13 @@ body, html{
 	height:100%;
 }
 footer{
-	background: #112659;
-	margin: 0;
-	padding: 1em;
+	background: #f2f2f2;
+	border-top: 1px solid #ddd;
+	margin: 1em 0 0 0;
+	padding: 3em 1em;
 }
 header{
-	box-shadow: 0 0 10px black;
+	box-shadow: 0 0 10px rgba(0,0,0,.3);
 	/* left: 5%; */
 	margin: 0 auto;
 	position: relative;
@@ -165,13 +166,21 @@ section{
 /* .carousel-caption{
 	text-shadow: none !important;
 } */
+
+.carousel-control{
+	z-index: 10;
+}
+
+.centrado{
+	text-align: center;
+}
 .circulares{
 	border: 6px solid rgba(0, 157 , 224, .3);
 	border-radius: 50%;
 }
 .contacto,
 .mutual{
-	color: white;
+	color: #666;
 	display: inline-block;
 	padding-left: .8em;
 	padding-right: 1.5em;  
@@ -185,7 +194,7 @@ section{
 		margin: 0 !important;
 	}
 	.destacadoFooter{
-		color: #8098c1;
+		color: #337AB7;
 		font-weight: 600;
 		text-transform: uppercase;
 	}
@@ -204,7 +213,6 @@ section{
 		width: 60%;		
 	}
 		.contenedor .descripcion{
-			font-family: 'Cabin', sans-serif;
 			margin-left: auto;
 			margin-right: auto;
 			margin-top: 1em;
@@ -214,6 +222,9 @@ section{
 				margin: 0;
 				padding: 0;
 				text-align: center;
+			}
+			.descripcion p{
+				font-family: 'futura_ltbook';
 			}
 		.contImg{
 			box-sizing: border-box;
@@ -334,14 +345,26 @@ section{
 	padding: 2em 0;
 }
 
+.fondoIntNoBorderTop{
+	background: #fbfbfb;
+	border-bottom: 2px solid #428bca;
+	border-top: 2px solid #f2f2f2;
+	box-sizing: border-box;
+	margin: 2em auto;
+	padding: 2em 0;
+}
+
 .fotoLeft,
 .fotoRight{
 	background: transparent;
+	border: 5px solid rgba(255,255,255, .7);
+	border-radius: 50%;
 	font-size: 30px;
-	height: 30px !important;
+	height: 45px !important;
+	padding: 10px;
 	position: absolute;
 	top: 50%;
-	width: 30px !important;
+	width: 45px !important;
 }
 .fotoLeft{
 	left: 10%;
@@ -370,6 +393,19 @@ section{
 }
 .futuraItalic{
 	font-family: "futura_ltbookoblique";
+}
+
+/* .gm-style-iw{
+	background: rgba(51,122,183, 1);
+} */
+
+.gm-style-iw h3{
+	color: rgba(51,122,183, 1);
+	display: block;
+	font-family: 'futura_ltbook';
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 .imagenCarrusel{
@@ -542,24 +578,66 @@ section{
 	font-weight: normal !important;
 }
 
+.openSansAzulito{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .otraSeccion{
 	background: #337ab7;
 	height: 300px;
+	margin-top: 1em;
 }
 
-.otraSeccion .seccionInt{
-	background-attachment: fixed;
-	background-image: url('../images/tecnologiaFondo.jpg');
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-sizing: border-box;
-    display: block;
-	height: 100%;
-	margin: 0 auto;
-	padding: 4em 0;
-    width: 100%;
-}
+	.otraSeccion .seccionInt{
+		background-attachment: fixed;
+		background-image: url('../images/tecnologiaFondo.jpg');
+	    background-position: center top;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    box-sizing: border-box;
+	    display: block;
+		height: 100%;
+		margin: 0 auto;
+		padding: 4em 0;
+	    width: 100%;
+	}
+	.otraSeccion .seccionInt2{
+		background-attachment: fixed;
+		background-image: url('../images/seguroPapaFondo.jpg');
+	    background-position: center top;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    box-sizing: border-box;
+	    display: block;
+		height: 100%;
+		margin: 0 auto;
+		padding: 4em 0;
+	    width: 100%;
+	}
+		.seccionInt2 .imagenes,
+		.seccionInt3 .imagenes
+		{
+			background: rgba(255, 255,255, .5);
+			border: none;
+		}
+		.seccionInt2 .imagenes .circulares
+		.seccionInt3 .imagenes .circulares
+		{
+			margin: 0 0 0 10px;
+		}
+	.otraSeccion .seccionInt3{
+		background-attachment: fixed;
+		background-image: url('../images/iramFondo.jpg');
+	    background-position: center top;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    box-sizing: border-box;
+	    display: block;
+		height: 100%;
+		margin: 0 auto;
+		padding: 4em 0;
+	    width: 100%;
+	}
 
 .pagos{
 	/*background: aliceblue;*/
@@ -598,12 +676,19 @@ section{
 .sinMargen{
 	margin: 0 !important;
 }
+
+.sinMargenTop{
+	margin-top: 0 !important;
+}
+
 .sinPuntos{
 	list-style: none;
 }
 	.sinPuntos li{
+		font-family: 'futura_ltbook';
 		margin-left: 0 !important;
 	}
+
 .tab-content{
 	/* background: #eee; */
 	border-radius: 5px !important;
@@ -655,6 +740,14 @@ table{
 	text-align: left;
 }
 
+.tabDesktop{
+	display: inline-block;
+}
+
+.tabMobile{
+	display: none;
+}
+
 .tecnologia{
 	width: 200px;
 }
@@ -662,6 +755,7 @@ table{
 .textoEntrada{
 	background: rgba(153, 153, 153, .5) !important;
 	background: #112659;
+	border-radius: 5px;
 	bottom: initial !important;
 	font-family: "futura_ltbook";
 	margin-right: -300px;
@@ -693,6 +787,10 @@ table{
 		color: #262f38 !important;	
 	}
 
+.textoFoto{
+	max-width: 300px;
+}
+
 .titulo{
 	border-bottom: 2px solid #428bca; 
 	color: #428bca;
@@ -708,7 +806,7 @@ table{
 	text-transform: uppercase;
 }
 .ventajas, .listaIntena{
-	margin-left: 1em !important;
+	margin: 0 0 0 1em !important;
 }
 	.listaIntena li{
 		font-family: "futura_ltbookoblique"
@@ -728,12 +826,13 @@ table{
 
 @media screen and (max-width: 800px){
 	.abajoDelMenu{
-		margin-top: 150px !important;
+		margin-top: 2em !important;
 	}
 	.botonMenu span{
 		border-right: 0;		
 	}
 	.contenedor{
+		margin: 0;
 		padding: 0 1em !important;
 	}
 	.contenedor .row{
@@ -747,6 +846,11 @@ table{
 		margin: 0 !important;
 		width: 100%;
 	}
+	.imgAside{
+		margin-left: auto;
+		margin-right: auto;
+		width: 250px;
+	}
 	.fotosFooter{
 		display: block;
 		float: none !important;
@@ -755,12 +859,12 @@ table{
 		text-align: left;
 		width: 100%;
 	}
-	.menuArriba{
-		left: 0;
-		margin: 0;
-		position: absolute;
-		top: -55px;
-	}
+/* 	.menuArriba{
+	left: 0;
+	margin: 0;
+	position: absolute;
+	top: -55px;
+} */
 	.pagos figure{
 		border-bottom: 0;
 		text-align: justify;
@@ -771,6 +875,14 @@ table{
 		margin-top: 1em;
 		padding-top: 5px;
 		width: 100%;
+	}
+	
+	.tabDesktop{
+		display: none;
+	}
+	
+	.tabMobile{
+		display: block;
 	}
 }
 @media screen and (max-width: 767px){

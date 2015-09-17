@@ -37,7 +37,7 @@ var marker = new google.maps.Marker({ // Set the marker
 //  });
 
 var infowindow = new google.maps.InfoWindow({ // Create a new InfoWindow
-    content:"<h3>https://www.mutualdeseguros.cl/</h3><p>Railway Drive-through available.</p>" // HTML contents of the InfoWindow
+    content:'<h3>https://www.mutualdeseguros.cl/</h3><p class="centrado">Molina N° 446, Valparaíso - Chile</p>' // HTML contents of the InfoWindow
   });
 google.maps.event.addListener(marker, 'click', function() { // Add a Click Listener to our marker
     infowindow.open(map,marker); // Open our InfoWindow
