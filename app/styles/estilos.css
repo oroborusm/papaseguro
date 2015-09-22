@@ -40,7 +40,7 @@ footer{
 	background: #f2f2f2;
 	border-top: 1px solid #ddd;
 	margin: 1em 0 0 0;
-	padding: 3em 1em;
+	padding: 3em 2em;
 }
 header{
 	box-shadow: 0 0 10px rgba(0,0,0,.3);
@@ -178,7 +178,7 @@ section{
 	border: 6px solid rgba(0, 157 , 224, .3);
 	border-radius: 50%;
 }
-.contacto,
+/* .contacto,
 .mutual{
 	color: #666;
 	display: inline-block;
@@ -197,7 +197,7 @@ section{
 		color: #337AB7;
 		font-weight: 600;
 		text-transform: uppercase;
-	}
+	} */
 .container{
 	/* margin-top: 1em; */
 	max-width: 100% !important;
@@ -291,6 +291,53 @@ section{
 		text-decoration: underline;
 	}
 
+.contFooter{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+	.contFooter li{
+		display: inline-block;
+		padding: 10px;
+		text-align: left;
+		vertical-align: top;
+		width: 30%;
+		max-width: 350px;
+		min-width: 220px;
+	}
+	.contFooter h3{
+		font-family: 'futura_ltbook';
+		font-size: 18px;
+		font-weight: 600;
+		margin: 0 0 10px 0;
+		text-transform: uppercase;
+	}
+	.contFooter p{
+		font-family: 'futura_ltbook';
+		font-size: 16px;
+		margin: 0;
+	}
+	.contFooter p a{
+		color: #262F38;
+		text-decoration: underline;
+	}
+	.imgFooter{
+		text-align: center;
+	}
+	.imgFooter a{
+		border-right: 2px solid #428bca;
+		display: block;
+		text-align: center;
+		width: 90%;
+	}
+	.imgFooter .enLinea{
+		margin-top: 10px;
+		width: 160px;
+	}
+	.imgFooter .enLinea img{
+		width: 100%;
+	}
+
 .contentTab{
 	margin: 0 auto;
 	padding: 3em 0 2em;
@@ -374,11 +421,11 @@ section{
 	text-align: left;
 	right: 10%;
 }
-.fotosFooter p{
+/* .fotosFooter p{
 	color: white;
 	display: block;
 	margin-top: 10px;
-}
+} */
 
 .fuenteMediana{
 	font-size: 14px !important;
@@ -516,6 +563,7 @@ section{
 .modal-header{
 	border:none;
 }
+
 .mutualheader{
 	background: rgba(255,255,255, .9) !important;
 	background: white; 
@@ -850,14 +898,6 @@ table{
 		margin-left: auto;
 		margin-right: auto;
 		width: 250px;
-	}
-	.fotosFooter{
-		display: block;
-		float: none !important;
-		margin: 1.5em auto .8em;
-		padding-left: .8em;
-		text-align: left;
-		width: 100%;
 	}
 /* 	.menuArriba{
 	left: 0;

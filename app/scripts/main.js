@@ -13,16 +13,15 @@
 	$('a.scroll').on('click', function (e) {
 		var href = $(this).attr('href');
 		$('html, body').animate({
-			scrollTop: $(href).offset().top
+			scrollTop: $(".objetivo").offset().top
 		}, 'slow');
 		e.preventDefault();
 	});
 
-	$(".scrollchico").click(function() {
+	$(".scrollchico").on('click', function (e) {
 
-		$('html, body').animate({
-			scrollTop: $(".objetivo").offset().top
-		},1000);
+		$('#tabs > li').removeClass('active')
+		e.preventDefault();
 	});
 
 	if(localStorage.getItem('popState') != 'shown'){
