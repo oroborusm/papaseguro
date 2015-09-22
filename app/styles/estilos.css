@@ -314,7 +314,7 @@ section{
 	}
 	.contFooter p{
 		font-family: 'futura_ltbook';
-		font-size: 16px;
+		font-size: 15px;
 		margin: 0;
 	}
 	.contFooter p a{
@@ -890,6 +890,12 @@ table{
 		width: 100%;
 	}
 
+	.contFooter li{
+		width: 100%;
+		max-width: initial;
+		min-width: initial;
+	}
+
 	.linksTo {
 		margin: 0 !important;
 		width: 100%;
@@ -898,6 +904,16 @@ table{
 		margin-left: auto;
 		margin-right: auto;
 		width: 250px;
+	}
+
+	.imgFooter a{
+		border-bottom: 2px solid #428bca;
+		border-right: none;
+		text-align: right;
+		width: 100%;
+	}
+	.imgFooter img{
+		width: initial !important;
 	}
 /* 	.menuArriba{
 	left: 0;
@@ -955,6 +971,16 @@ table{
 		width: 150px;
 	}
 }
+
+@media screen and (max-width: 400px){
+	footer{
+		padding: 1em;
+	}
+	.contFooter li h3, .contFooter li p{
+		font-size: 95%;
+	}
+}
+
 @media screen and (max-width: 350px){
 	section{
 		width: 100%;
