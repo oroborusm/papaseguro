@@ -24,10 +24,10 @@
 		e.preventDefault();
 	});
 
-	if(localStorage.getItem('popState') != 'shown'){
+/*	if(localStorage.getItem('popState') != 'shown'){*/
 		$('#myModal').modal({
 			show: true
 		});
-		localStorage.setItem('popState','shown')
-    }
+/*		localStorage.setItem('popState','shown')
+    }*/
 })();
