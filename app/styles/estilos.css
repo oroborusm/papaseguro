@@ -325,7 +325,7 @@ section{
 		text-align: center;
 	}
 	.imgFooter a{
-		border-right: 2px solid #428bca;
+		border-left: 2px solid #428bca;
 		display: block;
 		text-align: center;
 		width: 90%;
@@ -338,6 +338,13 @@ section{
 		width: 100%;
 	}
 
+	.imgFooterDesktop{
+		display: inline-block !important;
+	}
+	.imgFooterMovil{
+		display: none !important;
+	}
+
 .contentTab{
 	margin: 0 auto;
 	padding: 3em 0 2em;
@@ -345,6 +352,17 @@ section{
 }
 	.contentTab h2{
 		margin-bottom: 1em;
+	}
+
+.copyright{
+	background: #428bca;
+	padding: 5px 0;
+}
+	.copyright p{
+		color: white;
+		font-family: 'futura_ltbook';
+		margin: 0;
+		text-align: center;
 	}
 
 .descargas{
@@ -908,12 +926,19 @@ table{
 
 	.imgFooter a{
 		border-bottom: 2px solid #428bca;
-		border-right: none;
+		border-left: none;
 		text-align: right;
 		width: 100%;
 	}
 	.imgFooter img{
 		width: initial !important;
+	}
+
+	.imgFooterDesktop{
+		display: none !important;
+	}
+	.imgFooterMovil{
+		display: block !important;
 	}
 /* 	.menuArriba{
 	left: 0;
